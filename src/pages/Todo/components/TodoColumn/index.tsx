@@ -9,7 +9,7 @@ const TodoColumn: FC<ITodoColumnProps> = ({ todos, heading, handleOrderEditStart
       <div className={styles.heading}>
         <span>{heading}</span>
       </div>
-      <div>
+      <div className={styles.todoColumn}>
         {todos.map((todo) => (
           <TodoItem key={todo.id} todo={todo} handleOrderEditStart={handleOrderEditStart} />
         ))}
