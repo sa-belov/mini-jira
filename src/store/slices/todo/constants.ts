@@ -3,46 +3,26 @@ import { ITodoState } from './types';
 export const initialState: ITodoState = {
   todos: [
     {
-      id: Date.now(),
+      id: 1,
       text: 'First todo',
       priority: 'light',
       progress: 'done',
-      date: new Date(),
+      date: Date.now().toLocaleString(),
     },
     {
-      id: Date.now(),
+      id: 2,
       text: 'Second todo',
       priority: 'high',
       progress: 'todo',
-      date: new Date(),
+      date: Date.now().toLocaleString(),
     },
     {
-      id: Date.now(),
+      id: 3,
       text: 'Third todo',
       priority: 'medium',
       progress: 'inProgress',
-      date: new Date(),
-    },
-    {
-      id: Date.now(),
-      text: 'Fourth todo',
-      priority: 'light',
-      progress: 'done',
-      date: new Date(),
-    },
-    {
-      id: Date.now(),
-      text: 'Fifth todo',
-      priority: 'high',
-      progress: 'inProgress',
-      date: new Date(),
-    },
-    {
-      id: Date.now(),
-      text: 'Sixth todo',
-      priority: 'medium',
-      progress: 'todo',
-      date: new Date(),
+      date: Date.now().toLocaleString(),
     },
   ],
+  selectedTodo: null,
 };

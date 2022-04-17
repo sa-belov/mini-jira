@@ -1,0 +1,40 @@
+@import "../../../styles/colors"
+
+.dropdown
+  width: 100%
+  position: relative
+  height: 30px
+  border: 1px solid rgba(167, 167, 167, 0.3)
+  cursor: pointer
+  border-radius: 5px
+
+.dropdownSelectedOption
+  height: 100%
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-radius: 5px
+
+  svg
+    width: 12px
+    flex-shrink: 0
+    transition: transform ease 0.3s
+    transform: rotate(-90deg)
+
+.dropdownOptions
+  background: #fff
+  width: 100%
+  position: absolute
+  top: calc(#{30px} + 5px)
+  border: 1px solid rgba(167, 167, 167, 0.3)
+  z-index: 1
+
+
+
+
+.dropdownOption
+  padding: 0.25em 0.5em
+  &:hover
+    background: #8F95D3
+    

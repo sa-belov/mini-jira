@@ -1,0 +1,41 @@
+@import "../../../../styles/colors"
+
+.container
+  width: 300px
+  .heading
+    padding: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .sort
+      width: 16px
+      height: 16px
+      cursor: pointer
+  .todo
+    padding: 10px
+    display: flex
+    justify-content: space-between
+    .icons
+      display: flex
+      gap: 10px
+      .closeIcon
+        cursor: pointer
+        width: 16px
+        height: 16px
+        display: none
+      .editIcon
+        cursor: pointer
+        width: 16px
+        height: 16px
+        display: none
+    &:hover
+      .closeIcon
+        display: block
+      .editIcon
+        display: block
+  .green
+    background: $green
+  .yellow
+    background: $yellow
+  .red
+    background: $red
